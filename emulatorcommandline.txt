@@ -1,0 +1,11 @@
+some command line things, mostly reference to copy/paste to create D64 and export files.
+
+./c1541
+format c642048,c642048 d64 c642048.d64
+
+export the PRG file
+./c1541 -attach c642048.d64 -read 2048.prg 2048prg.prg
+
+convert to ASCII text basic
+
+./petcat -2 -o 2048.bas -- 2048.prg
